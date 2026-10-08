@@ -1,0 +1,51 @@
+{
+  "$schema": "./profile.schema.json",
+  "profile": {
+    "name": "すよはる",
+    "handle": "@suyo_haru",
+    "bio": "SNSなどのリンク",
+    "avatar": "/icon.png"
+  },
+  "links": [
+    {
+      "title": "suyoharu.net (未だ工事中)",
+      "url": "https://www.suyoharu.net/",
+      "group": "ホームページ"
+    },
+    {
+      "title": "X",
+      "url": "https://x.com/@suyo_haru",
+      "group": "SNS"
+    },
+    {
+      "title": "Bluesky",
+      "url": "https://bsky.suyoharu.net",
+      "group": "SNS"
+    },
+    {
+      "title": "ニコニコ",
+      "url": "https://www.nicovideo.jp/user/54229027",
+      "group": "SNS"
+    },
+    {
+      "title": "Wick",
+      "url": "https://wick-share.com/sns/share/VW00SoRT?v=1791429604315",
+      "group": "SNS"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/suyo-haru",
+      "group": "開発"
+    },
+    {
+      "title": "Keyoxide",
+      "url": "https://keyoxide.org/wkd/suyo_haru@suyoharu.net",
+      "group": "その他"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://open.spotify.com/user/31rhzhgmiuzj6mnifyr4qw35tfvm",
+      "group": "その他"
+    }
+  ]
+}

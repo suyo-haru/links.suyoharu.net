@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "プロフィールとリンク集",
+  "type": "object",
+  "required": ["profile", "links"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "profile": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "handle": { "type": "string", "description": "空欄で非表示" },
+        "bio": { "type": "string", "description": "自己紹介。空欄で非表示" },
+        "avatar": {
+          "type": "string",
+          "description": "アバター画像のURL。空欄で文字のアバター"
+        },
+        "initials": { "type": "string", "minLength": 1, "maxLength": 3 }
+      }
+    },
+    "links": {
+      "type": "array",
+      "description": "グループは最初に登場した順、グループ内のリンクは配列内の順番で表示",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "minLength": 1 },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^(https?://|mailto:)"
+          },
+          "description": {
+            "type": "string",
+            "description": "省略可能な説明文"
+          },
+          "group": {
+            "type": "string",
+            "description": "グループの見出し。例: SNS、開発、その他。省略・空欄で見出しなし"
+          }
+        }
+      }
+    }
+  }
+}
